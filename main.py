@@ -208,5 +208,59 @@
 
 # print("Все работает корректно")
 
-############################################## 
+######################################################################## 
 
+############################ Задание 2 #################################  
+
+# class Report:
+#     def __init__(self, title: str, content: str):
+#         self.title = title
+#         self.content = content
+
+# class PDFGe
+
+######################################################################## 
+
+############################ Задание 3 #################################  
+
+# from abc import ABC, abstractmethod
+
+# class PaymentProcessor(ABC):
+#     @abstractmethod
+#     def process_payment(self, amount: float):
+#         pass
+
+# class PayPalProcessor(PaymentProcessor):
+#     def __init__(self, email: str):
+#         self.email = email
+        
+#     def process_payment(self, amount: float):
+#         print(f"PayPal оплата {amount: .2f}Р через PayPal аккаунт {self.email}")
+        
+
+# class CreditCardProcessor(PaymentProcessor):
+#     def __init__(self, card_number: str):
+#         self.card_number = card_number
+
+#     def process_payment(self, amount: float) -> None:
+#         print(f"CreditCard Оплата {amount:.2f}₽ с карты: {self.card_number}")
+
+        
+# class CryptoProcessor(PaymentProcessor):
+#     def __init__(self, wallet_address: str):
+#         self.wallet_address = wallet_address
+        
+#     def process_payment(self, amount: float):
+#         print(f"Crypto оплата {amount: .2f}Р через кошелек {self.wallet_address}")
+        
+# if __name__ == "__main__":
+#     processors: list[PaymentProcessor] = [
+#         PayPalProcessor("user@example.com"),
+#         CreditCardProcessor("4111 1111 1111 1111"),
+#         CryptoProcessor("0xABCDEF1234567890"),
+#     ]
+
+#     for processor in processors:
+#         processor.process_payment(2500.00)
+
+######################################################################## 
