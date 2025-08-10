@@ -166,7 +166,6 @@
 # class Swimmable:
 #     def swim(self):
 #         print("I'm swimming!")
-
 # class Duck(Flyable, Swimmable):
 #     def make_sound(self):
 #         print("Quack!")       
@@ -264,3 +263,84 @@
 #         processor.process_payment(2500.00)
 
 ######################################################################## 
+
+############################ Задание 4 #################################  
+
+# class Bird:
+#     def fly(self):
+#         print("I'm flying!")
+        
+# class Sparrow(Bird):
+#     def fly(self):
+#         print("Sparrow is flying")
+        
+# class Penguin(Bird):
+#     def fly(self):
+#         print("Penguin is swimming")
+        
+# def birds_fly(bird: Bird):
+#     bird.fly()
+
+# sparrow = Sparrow()
+# penguin = Penguin()
+
+# birds_fly(sparrow)  
+# birds_fly(penguin) 
+
+########################################################################
+
+############################ Задание 5 #################################
+
+# from abc import ABC, abstractmethod
+
+# class Flyable(ABC):
+#     @abstractmethod
+#     def fly(self):
+#         pass
+
+# class Runnable(ABC):
+#     @abstractmethod
+#     def run(self):
+#         pass
+    
+# class Swimmable(ABC):
+#     @abstractmethod
+#     def swim(self):
+#         pass 
+    
+# class Lion(Runnable):
+#     def run(self):
+#         print("Lion is run")
+        
+# lion = Lion()
+# lion.run()
+
+########################################################################
+
+############################ Задание 6 #################################
+
+# class Temperature:
+#     def __init__(self, celsius: float):
+#         self.celsius = celsius
+
+#     @classmethod
+#     def fahrenheit(cls, fahrenheit: float):
+#         celsius = (fahrenheit - 32) * 5 / 9
+#         return cls(celsius)
+    
+#     @property
+#     def kelvins(self):
+#         return self.celsius + 273.15
+    
+#     @staticmethod
+#     def is_friz(temp: float):
+#         return temp <= 0
+
+
+
+# t1 = Temperature(25)
+# print(t1.kelvins)  
+
+########################################################################
+    
+        
